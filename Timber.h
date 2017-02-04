@@ -10,22 +10,22 @@ private:
   // Dimensionsmått
   string dimension;
   int meters; //Antal meter @ lager
-  float price; //Kostnad per löpmeter
+  double price; //Kostnad per löpmeter
 public:
   //Konstruktor
-  Timber(string title ="-", int meters=0, float price = 0);
+  Timber(string title ="-", int meters=0, double price = 0);
   //Dekonstruktor
   ~Timber();
 
   //Set-funktioner
   void setDimension(string dimension);
   void setMeters(int meters);
-  void setPrice(float price);
+  void setPrice(double price);
 
   //Get-funktioner
   string getDimension()const;
   int getMeters()const;
-  float getPrice()const;
+  double getPrice()const;
 
   string toString()const;
 

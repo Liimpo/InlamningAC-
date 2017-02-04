@@ -1,6 +1,6 @@
 #include "Timber.h"
 
-Timber::Timber(string title, int meters, float price)
+Timber::Timber(string title, int meters, double price)
 {
   this->dimension = title;
   this->meters = meters;
@@ -22,7 +22,7 @@ void Timber::setMeters(int meters)
   this->meters = meters;
 }
 
-void Timber::setPrice(float price)
+void Timber::setPrice(double price)
 {
   this->price = price;
 }
@@ -37,7 +37,7 @@ int Timber::getMeters()const
   return this->meters;
 }
 
-float Timber::getPrice()const
+double Timber::getPrice()const
 {
   return this->price;
 }
